@@ -2,7 +2,8 @@
 // или сообщает, что третьей цифры нет.
 
 int Number = new Random().Next(1, 65536);
-if (Number > 99 && Number <= 999)
+Console.WriteLine(Number);
+if (Number > 99)
 {
     int digit_third = (Number / 100) % 10;
     Console.WriteLine(digit_third);
